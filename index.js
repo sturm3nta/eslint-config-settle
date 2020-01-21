@@ -1,4 +1,14 @@
 module.exports = {
+  "root": true,
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "env": {
+    "amd": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "settings": { "import/ignore": ["src/types/index.js"] },
   rules: {
     "-------- ↓↓↓ DISABLED ↓↓↓ -----------": "------------------------------",
     "camelcase": 0,
