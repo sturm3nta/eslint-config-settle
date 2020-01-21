@@ -3,7 +3,6 @@ module.exports = {
     MyGlobal: true
   },
   rules: {
-    semi: ['error', 'always'], // https://eslint.org/docs/rules/semi
-    "react/destructuring-assignment": 1
+    "react/destructuring-assignment": 0
   }
 };
