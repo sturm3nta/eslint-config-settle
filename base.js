@@ -1,8 +1,10 @@
+'use strict';
+
 module.exports = {
   root: true,
   extends: ['airbnb', 'plugin:prettier/recommended'],
   settings: { 'import/ignore': ['src/types/index.js'] },
-  rules: {
+  rules: Object.assign({
     '-------- ↓↓↓ DISABLED ↓↓↓ -----------': '------------------------------',
     'no-param-reassign': 0,
     'consistent-return': 0,
@@ -24,5 +26,5 @@ module.exports = {
     '-------- ↓↓↓ ERROR ↓↓↓ -----------': '------------------------------',
     camelcase: 0,
     'no-unused-vars': 2
-  }
+  })
 };

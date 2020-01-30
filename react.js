@@ -1,9 +1,11 @@
+'use strict';
+
 module.exports = {
-  extends: ['prettier/react', './base'],
+  extends: ['prettier/react', './base.js'],
   env: { browser: true },
   parser: 'babel-eslint',
   settings: { 'import/ignore': ['src/types/index.js'] },
-  rules: {
+  rules: Object.assign({
     '-------- ↓↓↓ DISABLED ↓↓↓ -----------': '------------------------------',
     'jsx-a11y/alt-text': 0,
     'react/prop-types': [0],
@@ -23,5 +25,5 @@ module.exports = {
 
     '-------- ↓↓↓ ERROR ↓↓↓ -----------': '------------------------------',
     'react/no-access-state-in-setstate': 2
-  }
+  })
 };
