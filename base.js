@@ -5,7 +5,7 @@ module.exports = {
   extends: ['airbnb', 'plugin:prettier/recommended'],
   settings: { 'import/ignore': ['src/types/index.js'] },
   rules: Object.assign({
-    '-------- ↓↓↓ DISABLED ↓↓↓ -----------': '------------------------------',
+    '-------- ↓↓↓ DISABLED ↓↓↓ ---------------------------------': 0,
     'no-param-reassign': 0,
     'consistent-return': 0,
     'no-nested-ternary': 0,
@@ -15,7 +15,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/no-named-as-default-member': 0,
 
-    '-------- ↓↓↓ WARNING ↓↓↓ -----------': '------------------------------',
+    '-------- ↓↓↓ WARNING ↓↓↓ ---------------------------------': 0,
     eqeqeq: 1,
     'no-shadow': 1,
     'no-plusplus': 1,
@@ -23,7 +23,7 @@ module.exports = {
     'no-return-assign': 1,
     'import/no-extraneous-dependencies': 1,
 
-    '-------- ↓↓↓ ERROR ↓↓↓ -----------': '------------------------------',
+    '-------- ↓↓↓ ERROR ↓↓↓ ---------------------------------': 0,
     camelcase: 0,
     'no-unused-vars': 2
   })
